@@ -1,1 +1,3 @@
 # BatSpeedWristClient
+
+watchOS wristClient
