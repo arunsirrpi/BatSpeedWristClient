@@ -1,0 +1,888 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		071A79402621686B007E71BC /* Bat_SpeedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071A793F2621686B007E71BC /* Bat_SpeedApp.swift */; };
+		071A79422621686B007E71BC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071A79412621686B007E71BC /* ContentView.swift */; };
+		071A79442621686D007E71BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 071A79432621686D007E71BC /* Assets.xcassets */; };
+		071A79472621686D007E71BC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 071A79462621686D007E71BC /* Preview Assets.xcassets */; };
+		071A79522621686D007E71BC /* Bat_SpeedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071A79512621686D007E71BC /* Bat_SpeedTests.swift */; };
+		071A795D2621686D007E71BC /* Bat_SpeedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071A795C2621686D007E71BC /* Bat_SpeedUITests.swift */; };
+		071A79622621686D007E71BC /* Bat Speed WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 071A79612621686D007E71BC /* Bat Speed WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		071A79672621686E007E71BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 071A79662621686D007E71BC /* Assets.xcassets */; };
+		071A796E2621686E007E71BC /* Bat Speed WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 071A796D2621686E007E71BC /* Bat Speed WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		071A79732621686E007E71BC /* Bat_SpeedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071A79722621686E007E71BC /* Bat_SpeedApp.swift */; };
+		071A79752621686E007E71BC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071A79742621686E007E71BC /* ContentView.swift */; };
+		071A79772621686E007E71BC /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071A79762621686E007E71BC /* NotificationController.swift */; };
+		071A79792621686E007E71BC /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071A79782621686E007E71BC /* NotificationView.swift */; };
+		071A797B2621686E007E71BC /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071A797A2621686E007E71BC /* ComplicationController.swift */; };
+		071A797D2621686E007E71BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 071A797C2621686E007E71BC /* Assets.xcassets */; };
+		071A79802621686E007E71BC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 071A797F2621686E007E71BC /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		071A794E2621686D007E71BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 071A79342621686B007E71BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 071A793B2621686B007E71BC;
+			remoteInfo = "Bat Speed";
+		};
+		071A79592621686D007E71BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 071A79342621686B007E71BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 071A793B2621686B007E71BC;
+			remoteInfo = "Bat Speed";
+		};
+		071A79632621686D007E71BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 071A79342621686B007E71BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 071A79602621686D007E71BC;
+			remoteInfo = "Bat Speed WatchKit App";
+		};
+		071A796F2621686E007E71BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 071A79342621686B007E71BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 071A796C2621686E007E71BC;
+			remoteInfo = "Bat Speed WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		071A79882621686E007E71BC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				071A796E2621686E007E71BC /* Bat Speed WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		071A798C2621686E007E71BC /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				071A79622621686D007E71BC /* Bat Speed WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		071A793C2621686B007E71BC /* Bat Speed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bat Speed.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		071A793F2621686B007E71BC /* Bat_SpeedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bat_SpeedApp.swift; sourceTree = "<group>"; };
+		071A79412621686B007E71BC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		071A79432621686D007E71BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		071A79462621686D007E71BC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		071A79482621686D007E71BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		071A794D2621686D007E71BC /* Bat SpeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bat SpeedTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		071A79512621686D007E71BC /* Bat_SpeedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bat_SpeedTests.swift; sourceTree = "<group>"; };
+		071A79532621686D007E71BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		071A79582621686D007E71BC /* Bat SpeedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bat SpeedUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		071A795C2621686D007E71BC /* Bat_SpeedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bat_SpeedUITests.swift; sourceTree = "<group>"; };
+		071A795E2621686D007E71BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		071A79612621686D007E71BC /* Bat Speed WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bat Speed WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		071A79662621686D007E71BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		071A79682621686E007E71BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		071A796D2621686E007E71BC /* Bat Speed WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Bat Speed WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		071A79722621686E007E71BC /* Bat_SpeedApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bat_SpeedApp.swift; sourceTree = "<group>"; };
+		071A79742621686E007E71BC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		071A79762621686E007E71BC /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		071A79782621686E007E71BC /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		071A797A2621686E007E71BC /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		071A797C2621686E007E71BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		071A797F2621686E007E71BC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		071A79812621686E007E71BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		071A79822621686E007E71BC /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		071A79392621686B007E71BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		071A794A2621686D007E71BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		071A79552621686D007E71BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		071A796A2621686E007E71BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		071A79332621686B007E71BC = {
+			isa = PBXGroup;
+			children = (
+				071A793E2621686B007E71BC /* Bat Speed */,
+				071A79502621686D007E71BC /* Bat SpeedTests */,
+				071A795B2621686D007E71BC /* Bat SpeedUITests */,
+				071A79652621686D007E71BC /* Bat Speed WatchKit App */,
+				071A79712621686E007E71BC /* Bat Speed WatchKit Extension */,
+				071A793D2621686B007E71BC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		071A793D2621686B007E71BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				071A793C2621686B007E71BC /* Bat Speed.app */,
+				071A794D2621686D007E71BC /* Bat SpeedTests.xctest */,
+				071A79582621686D007E71BC /* Bat SpeedUITests.xctest */,
+				071A79612621686D007E71BC /* Bat Speed WatchKit App.app */,
+				071A796D2621686E007E71BC /* Bat Speed WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		071A793E2621686B007E71BC /* Bat Speed */ = {
+			isa = PBXGroup;
+			children = (
+				071A793F2621686B007E71BC /* Bat_SpeedApp.swift */,
+				071A79412621686B007E71BC /* ContentView.swift */,
+				071A79432621686D007E71BC /* Assets.xcassets */,
+				071A79482621686D007E71BC /* Info.plist */,
+				071A79452621686D007E71BC /* Preview Content */,
+			);
+			path = "Bat Speed";
+			sourceTree = "<group>";
+		};
+		071A79452621686D007E71BC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				071A79462621686D007E71BC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		071A79502621686D007E71BC /* Bat SpeedTests */ = {
+			isa = PBXGroup;
+			children = (
+				071A79512621686D007E71BC /* Bat_SpeedTests.swift */,
+				071A79532621686D007E71BC /* Info.plist */,
+			);
+			path = "Bat SpeedTests";
+			sourceTree = "<group>";
+		};
+		071A795B2621686D007E71BC /* Bat SpeedUITests */ = {
+			isa = PBXGroup;
+			children = (
+				071A795C2621686D007E71BC /* Bat_SpeedUITests.swift */,
+				071A795E2621686D007E71BC /* Info.plist */,
+			);
+			path = "Bat SpeedUITests";
+			sourceTree = "<group>";
+		};
+		071A79652621686D007E71BC /* Bat Speed WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				071A79662621686D007E71BC /* Assets.xcassets */,
+				071A79682621686E007E71BC /* Info.plist */,
+			);
+			path = "Bat Speed WatchKit App";
+			sourceTree = "<group>";
+		};
+		071A79712621686E007E71BC /* Bat Speed WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				071A79722621686E007E71BC /* Bat_SpeedApp.swift */,
+				071A79742621686E007E71BC /* ContentView.swift */,
+				071A79762621686E007E71BC /* NotificationController.swift */,
+				071A79782621686E007E71BC /* NotificationView.swift */,
+				071A797A2621686E007E71BC /* ComplicationController.swift */,
+				071A797C2621686E007E71BC /* Assets.xcassets */,
+				071A79812621686E007E71BC /* Info.plist */,
+				071A79822621686E007E71BC /* PushNotificationPayload.apns */,
+				071A797E2621686E007E71BC /* Preview Content */,
+			);
+			path = "Bat Speed WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		071A797E2621686E007E71BC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				071A797F2621686E007E71BC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		071A793B2621686B007E71BC /* Bat Speed */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 071A798D2621686E007E71BC /* Build configuration list for PBXNativeTarget "Bat Speed" */;
+			buildPhases = (
+				071A79382621686B007E71BC /* Sources */,
+				071A79392621686B007E71BC /* Frameworks */,
+				071A793A2621686B007E71BC /* Resources */,
+				071A798C2621686E007E71BC /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				071A79642621686D007E71BC /* PBXTargetDependency */,
+			);
+			name = "Bat Speed";
+			productName = "Bat Speed";
+			productReference = 071A793C2621686B007E71BC /* Bat Speed.app */;
+			productType = "com.apple.product-type.application";
+		};
+		071A794C2621686D007E71BC /* Bat SpeedTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 071A79902621686E007E71BC /* Build configuration list for PBXNativeTarget "Bat SpeedTests" */;
+			buildPhases = (
+				071A79492621686D007E71BC /* Sources */,
+				071A794A2621686D007E71BC /* Frameworks */,
+				071A794B2621686D007E71BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				071A794F2621686D007E71BC /* PBXTargetDependency */,
+			);
+			name = "Bat SpeedTests";
+			productName = "Bat SpeedTests";
+			productReference = 071A794D2621686D007E71BC /* Bat SpeedTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		071A79572621686D007E71BC /* Bat SpeedUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 071A79932621686E007E71BC /* Build configuration list for PBXNativeTarget "Bat SpeedUITests" */;
+			buildPhases = (
+				071A79542621686D007E71BC /* Sources */,
+				071A79552621686D007E71BC /* Frameworks */,
+				071A79562621686D007E71BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				071A795A2621686D007E71BC /* PBXTargetDependency */,
+			);
+			name = "Bat SpeedUITests";
+			productName = "Bat SpeedUITests";
+			productReference = 071A79582621686D007E71BC /* Bat SpeedUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		071A79602621686D007E71BC /* Bat Speed WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 071A79892621686E007E71BC /* Build configuration list for PBXNativeTarget "Bat Speed WatchKit App" */;
+			buildPhases = (
+				071A795F2621686D007E71BC /* Resources */,
+				071A79882621686E007E71BC /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				071A79702621686E007E71BC /* PBXTargetDependency */,
+			);
+			name = "Bat Speed WatchKit App";
+			productName = "Bat Speed WatchKit App";
+			productReference = 071A79612621686D007E71BC /* Bat Speed WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		071A796C2621686E007E71BC /* Bat Speed WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 071A79852621686E007E71BC /* Build configuration list for PBXNativeTarget "Bat Speed WatchKit Extension" */;
+			buildPhases = (
+				071A79692621686E007E71BC /* Sources */,
+				071A796A2621686E007E71BC /* Frameworks */,
+				071A796B2621686E007E71BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Bat Speed WatchKit Extension";
+			productName = "Bat Speed WatchKit Extension";
+			productReference = 071A796D2621686E007E71BC /* Bat Speed WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		071A79342621686B007E71BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					071A793B2621686B007E71BC = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					071A794C2621686D007E71BC = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 071A793B2621686B007E71BC;
+					};
+					071A79572621686D007E71BC = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 071A793B2621686B007E71BC;
+					};
+					071A79602621686D007E71BC = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					071A796C2621686E007E71BC = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 071A79372621686B007E71BC /* Build configuration list for PBXProject "Bat Speed" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 071A79332621686B007E71BC;
+			productRefGroup = 071A793D2621686B007E71BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				071A793B2621686B007E71BC /* Bat Speed */,
+				071A794C2621686D007E71BC /* Bat SpeedTests */,
+				071A79572621686D007E71BC /* Bat SpeedUITests */,
+				071A79602621686D007E71BC /* Bat Speed WatchKit App */,
+				071A796C2621686E007E71BC /* Bat Speed WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		071A793A2621686B007E71BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				071A79472621686D007E71BC /* Preview Assets.xcassets in Resources */,
+				071A79442621686D007E71BC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		071A794B2621686D007E71BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		071A79562621686D007E71BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		071A795F2621686D007E71BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				071A79672621686E007E71BC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		071A796B2621686E007E71BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				071A79802621686E007E71BC /* Preview Assets.xcassets in Resources */,
+				071A797D2621686E007E71BC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		071A79382621686B007E71BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				071A79422621686B007E71BC /* ContentView.swift in Sources */,
+				071A79402621686B007E71BC /* Bat_SpeedApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		071A79492621686D007E71BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				071A79522621686D007E71BC /* Bat_SpeedTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		071A79542621686D007E71BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				071A795D2621686D007E71BC /* Bat_SpeedUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		071A79692621686E007E71BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				071A79772621686E007E71BC /* NotificationController.swift in Sources */,
+				071A79752621686E007E71BC /* ContentView.swift in Sources */,
+				071A797B2621686E007E71BC /* ComplicationController.swift in Sources */,
+				071A79732621686E007E71BC /* Bat_SpeedApp.swift in Sources */,
+				071A79792621686E007E71BC /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		071A794F2621686D007E71BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 071A793B2621686B007E71BC /* Bat Speed */;
+			targetProxy = 071A794E2621686D007E71BC /* PBXContainerItemProxy */;
+		};
+		071A795A2621686D007E71BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 071A793B2621686B007E71BC /* Bat Speed */;
+			targetProxy = 071A79592621686D007E71BC /* PBXContainerItemProxy */;
+		};
+		071A79642621686D007E71BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 071A79602621686D007E71BC /* Bat Speed WatchKit App */;
+			targetProxy = 071A79632621686D007E71BC /* PBXContainerItemProxy */;
+		};
+		071A79702621686E007E71BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 071A796C2621686E007E71BC /* Bat Speed WatchKit Extension */;
+			targetProxy = 071A796F2621686E007E71BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		071A79832621686E007E71BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		071A79842621686E007E71BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		071A79862621686E007E71BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Bat Speed WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = WE65J257FL;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Bat Speed WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "au.net.apptech.batSpeedWristClient.Bat-Speed.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		071A79872621686E007E71BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Bat Speed WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = WE65J257FL;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Bat Speed WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "au.net.apptech.batSpeedWristClient.Bat-Speed.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		071A798A2621686E007E71BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WE65J257FL;
+				IBSC_MODULE = Bat_Speed_WatchKit_Extension;
+				INFOPLIST_FILE = "Bat Speed WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "au.net.apptech.batSpeedWristClient.Bat-Speed.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Debug;
+		};
+		071A798B2621686E007E71BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WE65J257FL;
+				IBSC_MODULE = Bat_Speed_WatchKit_Extension;
+				INFOPLIST_FILE = "Bat Speed WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "au.net.apptech.batSpeedWristClient.Bat-Speed.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.2;
+			};
+			name = Release;
+		};
+		071A798E2621686E007E71BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Bat Speed/Preview Content\"";
+				DEVELOPMENT_TEAM = WE65J257FL;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Bat Speed/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "au.net.apptech.batSpeedWristClient.Bat-Speed";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		071A798F2621686E007E71BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Bat Speed/Preview Content\"";
+				DEVELOPMENT_TEAM = WE65J257FL;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Bat Speed/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "au.net.apptech.batSpeedWristClient.Bat-Speed";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		071A79912621686E007E71BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WE65J257FL;
+				INFOPLIST_FILE = "Bat SpeedTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "au.net.apptech.batSpeedWristClient.Bat-SpeedTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bat Speed.app/Bat Speed";
+			};
+			name = Debug;
+		};
+		071A79922621686E007E71BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WE65J257FL;
+				INFOPLIST_FILE = "Bat SpeedTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "au.net.apptech.batSpeedWristClient.Bat-SpeedTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bat Speed.app/Bat Speed";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		071A79942621686E007E71BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WE65J257FL;
+				INFOPLIST_FILE = "Bat SpeedUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "au.net.apptech.batSpeedWristClient.Bat-SpeedUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Bat Speed";
+			};
+			name = Debug;
+		};
+		071A79952621686E007E71BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WE65J257FL;
+				INFOPLIST_FILE = "Bat SpeedUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "au.net.apptech.batSpeedWristClient.Bat-SpeedUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Bat Speed";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		071A79372621686B007E71BC /* Build configuration list for PBXProject "Bat Speed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				071A79832621686E007E71BC /* Debug */,
+				071A79842621686E007E71BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		071A79852621686E007E71BC /* Build configuration list for PBXNativeTarget "Bat Speed WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				071A79862621686E007E71BC /* Debug */,
+				071A79872621686E007E71BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		071A79892621686E007E71BC /* Build configuration list for PBXNativeTarget "Bat Speed WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				071A798A2621686E007E71BC /* Debug */,
+				071A798B2621686E007E71BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		071A798D2621686E007E71BC /* Build configuration list for PBXNativeTarget "Bat Speed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				071A798E2621686E007E71BC /* Debug */,
+				071A798F2621686E007E71BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		071A79902621686E007E71BC /* Build configuration list for PBXNativeTarget "Bat SpeedTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				071A79912621686E007E71BC /* Debug */,
+				071A79922621686E007E71BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		071A79932621686E007E71BC /* Build configuration list for PBXNativeTarget "Bat SpeedUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				071A79942621686E007E71BC /* Debug */,
+				071A79952621686E007E71BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 071A79342621686B007E71BC /* Project object */;
+}
