@@ -23,6 +23,8 @@
 		071A797B2621686E007E71BC /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071A797A2621686E007E71BC /* ComplicationController.swift */; };
 		071A797D2621686E007E71BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 071A797C2621686E007E71BC /* Assets.xcassets */; };
 		071A79802621686E007E71BC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 071A797F2621686E007E71BC /* Preview Assets.xcassets */; };
+		071A79BB2621A626007E71BC /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071A79BA2621A626007E71BC /* AppCoordinator.swift */; };
+		071A79CF2621A700007E71BC /* DeviceMotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071A79CE2621A700007E71BC /* DeviceMotion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +109,9 @@
 		071A797F2621686E007E71BC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		071A79812621686E007E71BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		071A79822621686E007E71BC /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		071A79B92621A626007E71BC /* Bat Speed WatchKit App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bat Speed WatchKit App-Bridging-Header.h"; sourceTree = "<group>"; };
+		071A79BA2621A626007E71BC /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		071A79CE2621A700007E71BC /* DeviceMotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceMotion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +149,7 @@
 		071A79332621686B007E71BC = {
 			isa = PBXGroup;
 			children = (
+				071A79C12621A630007E71BC /* Shared */,
 				071A793E2621686B007E71BC /* Bat Speed */,
 				071A79502621686D007E71BC /* Bat SpeedTests */,
 				071A795B2621686D007E71BC /* Bat SpeedUITests */,
@@ -168,8 +174,8 @@
 		071A793E2621686B007E71BC /* Bat Speed */ = {
 			isa = PBXGroup;
 			children = (
-				071A793F2621686B007E71BC /* Bat_SpeedApp.swift */,
-				071A79412621686B007E71BC /* ContentView.swift */,
+				071A799B262172D3007E71BC /* App */,
+				071A799C262172E1007E71BC /* Scenes */,
 				071A79432621686D007E71BC /* Assets.xcassets */,
 				071A79482621686D007E71BC /* Info.plist */,
 				071A79452621686D007E71BC /* Preview Content */,
@@ -234,6 +240,32 @@
 				071A797F2621686E007E71BC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		071A799B262172D3007E71BC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				071A793F2621686B007E71BC /* Bat_SpeedApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		071A799C262172E1007E71BC /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				071A79412621686B007E71BC /* ContentView.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		071A79C12621A630007E71BC /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				071A79BA2621A626007E71BC /* AppCoordinator.swift */,
+				071A79B92621A626007E71BC /* Bat Speed WatchKit App-Bridging-Header.h */,
+				071A79CE2621A700007E71BC /* DeviceMotion.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -350,6 +382,7 @@
 					};
 					071A79602621686D007E71BC = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 					071A796C2621686E007E71BC = {
 						CreatedOnToolsVersion = 12.4;
@@ -426,8 +459,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				071A79BB2621A626007E71BC /* AppCoordinator.swift in Sources */,
 				071A79422621686B007E71BC /* ContentView.swift in Sources */,
 				071A79402621686B007E71BC /* Bat_SpeedApp.swift in Sources */,
+				071A79CF2621A700007E71BC /* DeviceMotion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -651,14 +686,22 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WE65J257FL;
 				IBSC_MODULE = Bat_Speed_WatchKit_Extension;
 				INFOPLIST_FILE = "Bat Speed WatchKit App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "au.net.apptech.batSpeedWristClient.Bat-Speed.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Bat Speed/App/Bat Speed WatchKit App-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 7.2;
@@ -671,14 +714,21 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WE65J257FL;
 				IBSC_MODULE = Bat_Speed_WatchKit_Extension;
 				INFOPLIST_FILE = "Bat Speed WatchKit App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "au.net.apptech.batSpeedWristClient.Bat-Speed.watchkitapp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Bat Speed/App/Bat Speed WatchKit App-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
